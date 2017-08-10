@@ -7,6 +7,8 @@ with 'WebService::ForecastIO::Request';
 
 use Time::Piece;
 
+our $VERSION = '0.3';
+
 # ABSTRACT: Perl client for api.forecast.io
 
 =head1 SYNOPSIS
