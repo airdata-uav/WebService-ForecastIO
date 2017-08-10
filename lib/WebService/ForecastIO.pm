@@ -1,4 +1,4 @@
-use 5.014;
+use 5.010;
 
 package WebService::ForecastIO;
 
@@ -11,7 +11,7 @@ use Time::Piece;
 
 =head1 SYNOPSIS
 
-    use 5.014;
+    use 5.010;
 
     my $forecast = WebService::ForecastIO->new(
             api_key => 'secret',
@@ -27,12 +27,12 @@ use Time::Piece;
 
 =head1 OVERVIEW
 
-This is a Perl client for L<forecast.io API|https://developer.forecast.io>. Forecast.io 
-applies "big data" analysis techniques to publicly available weather data including 
+This is a Perl client for L<forecast.io API|https://developer.forecast.io>. Forecast.io
+applies "big data" analysis techniques to publicly available weather data including
 radar image analysis.  One of the things it attempts to predict is I<when> certain
 weather events like rain will start, and the duration of those events.
 
-This library requires an API key which can be obtained for free from the 
+This library requires an API key which can be obtained for free from the
 L<developer web site|https://developer.forecast.io>. The first 1,000 calls
 per day are allowed without charge.  (More calls can be made if payment arrangements
 are made.)
@@ -100,7 +100,7 @@ This method takes two or three parameters.
 The first two parameters are C<latitude> and C<longitude> expressed
 as floats. The optional third parameter is a C<time> value. The time
 value can be expressed as either epoch seconds or as an iso8601
-format time. 
+format time.
 
 Data sets up to 60 years old are available. (Such times should
 be expressed as iso8601 format times since epoch seconds start

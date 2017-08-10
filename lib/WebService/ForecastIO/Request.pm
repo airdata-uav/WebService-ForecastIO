@@ -1,4 +1,4 @@
-use 5.014;
+use 5.010;
 
 package WebService::ForecastIO::Request;
 
@@ -67,7 +67,7 @@ sub request {
 
     my $url = $self->base_url . "/" . $self->api_key . "/" . (join ",", @_);
 
-    my $qp = join "&", (map {; "$_=" . $self->$_() } 
+    my $qp = join "&", (map {; "$_=" . $self->$_() }
                         grep {; defined $self->$_() } qw(exclude units));
 
     if ( $qp ) {
